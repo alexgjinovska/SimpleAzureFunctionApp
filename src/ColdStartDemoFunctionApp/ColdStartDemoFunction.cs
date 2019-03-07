@@ -18,7 +18,7 @@ namespace ColdStartDemoFunctionApp
         public static IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequest req, ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-            return new OkObjectResult($"Start demo completed.");
+            return new OkObjectResult($"Hello world.");
         }
     }
 }
